@@ -20,11 +20,11 @@ import json
 import ssl
 import jwt
 import time
+import signal
 import random
 import requests
 import urllib.parse
 import urllib.request
-import signal
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from threading import Lock, Event
@@ -149,13 +149,13 @@ def print_cache_stats():
 
 # Key 正则
 KEY_PATTERNS = {
-    "OpenAI": re.compile(r"sk-proj-[a-zA-Z0-9_\-\-]{50,}"),
+    "OpenAI": re.compile(r"sk-proj-[a-zA-Z0-9_\-]{50,}"),
     "OpenAI_Legacy": re.compile(r"sk-[a-zA-Z0-9]{32,}"),
     "OpenRouter": re.compile(r"sk-or-v1-[a-zA-Z0-9]{50,}"),
     "XAI": re.compile(r"xai-[a-zA-Z0-9]{32,}"),
     "DeepSeek": re.compile(r"sk-[a-zA-Z0-9]{32,}"),
-    "Gemini": re.compile(r"AIza[0-9A-Za-z\-\_]{35}"),
-    "Anthropic": re.compile(r"sk-ant-api[0-9A-Za-z\-\_]{40,}"),
+    "Gemini": re.compile(r"AIza[0-9A-Za-z\-_]{35}"),
+    "Anthropic": re.compile(r"sk-ant-api[0-9A-Za-z\-_]{40,}"),
     "Replicate": re.compile(r"r8_[a-zA-Z0-9]{32,}"),
     "HuggingFace": re.compile(r"hf_[a-zA-Z0-9]{30,}"),
     "MiMo": re.compile(r"tp-[a-zA-Z0-9]{10,}"),

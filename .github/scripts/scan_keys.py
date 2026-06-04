@@ -63,7 +63,7 @@ GITHUB_API = "https://api.github.com"
 ISSUE_QUERY = '"your key leak" OR "sk-" OR "sk-proj-" OR "xai-" OR "AIza" OR "sk-ant-api"'
 COMMIT_QUERY = 'sk- OR sk-proj- OR xai- OR AIza OR sk-ant-api'
 CODE_QUERY = 'sk- OR sk-proj- OR xai- OR AIza OR sk-ant-api'
-ENV_QUERY = 'filename:.env OR filename:.env.example OR filename:.env.local OR filename:.env.production OR filename:.env.staging OR filename:.env.dev OR filename:.env.test'
+ENV_QUERY = 'filename:.env OR filename:.env.example OR filename:.env.local OR filename:.env.production OR filename:.env.staging OR filename:.env.dev OR filename:.env.test OR filename:*.yaml OR filename:*.toml OR filename:settings.json OR filename:SKILL.md OR filename:*.js OR filename:main.py OR filename:*.py OR path:server'
 
 STATE_FILE = "replied_state.json"
 

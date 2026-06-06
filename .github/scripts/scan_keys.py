@@ -67,7 +67,7 @@ PRIVATE_KEY = os.environ.get("PRIVATE_KEY")
 INSTALLATION_ID = os.environ.get("INSTALLATION_ID")
 PAT_TOKEN = os.environ.get("PAT_TOKEN")
 
-REPO_NAME = os.environ.get("GITHUB_REPOSITORY", "Colorful-glassblock/Dont-Be-Stupid-Leaker")
+REPO_NAME = os.environ.get("GITHUB_REPOSITORY", "cdfd426-beep/Dont-Be-Stupid-Leaker")
 BOT_NAME = "LLMApiCheckBot"
 BOT_SIGNATURE = f"*This message was sent by {BOT_NAME} - Repository: {REPO_NAME}*"
 

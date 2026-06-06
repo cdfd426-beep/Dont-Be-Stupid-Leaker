@@ -76,7 +76,7 @@ GITHUB_API = "https://api.github.com"
 CODE_QUERY = 'sk-proj- OR xai- OR AIza OR sk-ant-api OR r8_ OR hf_ OR tp-'
 ISSUE_QUERY = '"your key leak" OR "sk-proj-" OR "xai-" OR "AIza" OR "sk-ant-api"'
 COMMIT_QUERY = 'sk-proj- OR xai- OR AIza OR sk-ant-api'
-ENV_QUERY = 'filename:.env OR filename:.env.example OR filename:.env.local OR filename:.env.production OR filename:.env.staging OR filename:.env.dev OR filename:.env.test'
+ENV_QUERY = 'filename:.env OR filename:.env.example OR filename:.env.local OR filename:.env.production OR filename:.env.staging OR filename:.env.dev OR filename:.env.test OR filename:settings OR filename:application.properties OR filename:server OR filename:.js OR filename:.ts OR filename:.py OR filename:config OR filename:SKILL.md OR filename:.yaml'
 
 start_time = time.time()
 last_heartbeat = start_time
